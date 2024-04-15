@@ -1,2 +1,2 @@
 ## About
-finding nth root of a float64 number in rust (implementing Newton algorithm of finding roots of P(X) = X^n - s)
+Implementing the "Sieve of Eratosthenes" in rust. see https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes.
