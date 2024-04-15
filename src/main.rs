@@ -1,8 +1,8 @@
 use stopwatch::Stopwatch;
 
-fn get_prime_numbers_less_than(max: u64) -> Vec<u64> {
+fn get_prime_numbers_less_than(max: u32) -> Vec<u32> {
     // all numbers (before sifting) from 2 to max
-    let mut numbers: Vec<u64> = (2..=max).collect();
+    let mut numbers: Vec<u32> = (2..=max).collect();
 
     // caculate where to stop
     let square_root_of_max = (max as f64).sqrt();
@@ -30,7 +30,7 @@ fn get_prime_numbers_less_than(max: u64) -> Vec<u64> {
 
 fn main() {
     let sw = Stopwatch::start_new();
-    let primes = get_prime_numbers_less_than(100);
+    let _primes = get_prime_numbers_less_than(1_000_000_000);
     println!("{:?}", sw.elapsed());
-    println!("{:?}", primes);
+    //println!("{:?}", primes);
 }
